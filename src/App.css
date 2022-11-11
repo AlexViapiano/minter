@@ -1,0 +1,87 @@
+body {
+  color: #454f5b;
+  font-family: Public Sans, sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #e5e5f7;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #f0eaff 40px
+    ),
+    repeating-linear-gradient(#fcfcfd55, #fcfcfd);
+}
+
+.tooltip {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+/* Transition to a bigger shadow on hover */
+.tooltip:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.join-container {
+  box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px,
+    rgb(145 158 171 / 12%) 0px 12px 24px -4px;
+  border-radius: 16px;
+  padding: 16px;
+  max-width: 400px;
+  background-color: #ffffff;
+  min-width: 300px;
+}
+
+.challenge-input {
+  height: 42px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  margin-right: 4px;
+  border-width: 1px;
+  color: #454f5b;
+  border-color: #cacbcc;
+}
+
+.button {
+  background-color: #512da8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "DM Sans", "Roboto", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 16;
+  font-weight: 600;
+  height: 46px;
+  padding: 0 24px;
+  border-radius: 4px;
+}
+
+.challenge-list {
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.challenge-list-item {
+  padding: 4px 2px;
+  width: 100%;
+  text-align: left;
+  padding-left: 10px;
+  background: #fbfbfb;
+}
+
+.challenge-list-item:nth-child(2n) {
+  background: #eeeeee;
+}
